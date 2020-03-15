@@ -1,0 +1,21 @@
+/*=Footer
+---------------------------------------------------------------------*/
+.site-footer {
+	background-color: $white;
+	border-top: 1px solid $dark-gray;
+	font-weight: bolder;
+	
+	.social-icons {
+		display: inline-flex;
+		margin: 0;
+		padding: 0;
+	}
+	
+	p { 
+		margin: 0;
+	}
+}
+
+.copyright {
+	color: $white;
+}

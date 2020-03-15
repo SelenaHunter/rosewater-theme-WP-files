@@ -1,0 +1,35 @@
+/*=Typography
+---------------------------------------------------------------------*/
+
+/**
+ * Header font sizes are set under the foundation settings. This can be
+ * used to overwrite those or for any additional typography styles.
+ */
+
+ 
+h1, h2, h3, h4, h5, h6 {
+	color: $yellow;
+	text-align: center;
+	margin: 1rem;
+	text-transform: uppercase;
+    font-style: italic;
+}
+
+article {
+    p {
+        color: $black;
+    }
+
+    a {
+        color: $seagreen;
+        text-decoration: none;
+        transition: $custom-transition;
+        
+        &:hover {
+            transition: $custom-transition;
+            color: $yellow;
+            text-decoration: none;
+        }
+    }
+}
+

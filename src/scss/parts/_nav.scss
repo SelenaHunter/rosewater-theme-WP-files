@@ -1,0 +1,98 @@
+.nav-main-wrap {
+    display: none;
+    background-color: $dropdownmenu-background;
+    box-shadow: $box-shadow;
+    margin-bottom: 1rem;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+
+    .dropdown.menu {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        transition: $custom-transition;
+        
+        a {
+            padding: 1rem 1rem;
+            font-family: "Merriweather Sans", serif;
+        }
+
+        li > a:hover {
+            background: darken($dropdownmenu-background, 10%);
+            transition: $custom-transition;
+        }
+    }
+}
+
+.nav-mobile-wrap {
+    @include breakpoint(medium) {
+        display: none;
+    }
+}
+
+i.nav-mobile-toggle {
+    position: absolute;
+    top: 10%;
+    right: rem-calc(10);
+    z-index: 10;
+    display: inline-block;
+    color: $font-title-color;
+    font-size: rem-calc(26);
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $yellow;
+    }
+}
+
+ .nav-mobile {
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    display: none;
+    clear: both;
+    margin: 0;
+    width: 100%;
+    background-color: $dropdownmenu-background;
+    text-align: center;
+    box-shadow: $box-shadow;
+
+    li {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        a {
+            display: block;
+            padding: rem-calc(10 24);
+
+            &:hover,
+            &:focus {
+                background: darken($dropdownmenu-background, 10%);
+            }
+        }
+    }
+
+    .sub-menu {
+        margin: 0;
+        padding: 0;
+        
+        li {
+            font-size: rem-calc(11.5);
+        }
+    }
+} 
+
+.is-dropdown-submenu {
+    list-style: none;
+    box-shadow: $box-shadow;
+}
+
+// Change arrow color on hover
+.dropdown.menu > li.is-dropdown-submenu-parent > a:hover::after {
+    border-color: $yellow transparent transparent;
+}

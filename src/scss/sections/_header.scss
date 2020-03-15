@@ -1,0 +1,29 @@
+/*=Header
+---------------------------------------------------------------------*/
+.site-header {
+	background-image: url('../../assets/images/header.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $blue;
+	background-blend-mode: difference;
+	
+	.logo {
+		text-align: center;
+		padding: 5%;
+		margin-bottom: 1rem;
+		a {
+			font-size: 300%;
+			color: $font-title-color; 
+			font-family: $font-title-style; 
+			text-transform: lowercase;
+		}
+	}
+	
+	@include breakpoint(medium) {
+		.logo a {
+			font-size: 500%;
+		}
+	}
+}
+

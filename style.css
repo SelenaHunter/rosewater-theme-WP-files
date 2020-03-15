@@ -1,0 +1,22 @@
+/*
+    Theme Name: rosewater
+    Theme URI: https://github.com/SelenaHunter/rosewater-theme/
+    Description: Foundation 6 Wordpress theme
+    Author: Selena Hunter
+    Author URI: selenahunter.github.io/
+    Version: 3.6.0
+    License: WTFPL
+    License URI: http://sam.zoy.org/wtfpl/
+    Tags: html5, sass, foundation, responsive
+*/
+
+/**
+ * Theme is compiled from scss under /assets/scss/_theme.scss
+ *
+ * theme.css under /assets/css is the main compiled file
+ * which can be edited BUT will be overwritten once it
+ * gets compiled again.
+ *
+ * Use the custom.css file in the themes root directory
+ * if you are not using a workflow that compiles scss.
+ */
